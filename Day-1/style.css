@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.parent {
+  background-color: #23424A;
+  padding: 50px;
+  margin: 0 auto;
+
+  /* Working with percentages for width helps to a responsive layout compared to ones with fixed widths */
+  width: 80%;
+}
+
+.child {
+  background-color: #38cfd9;
+  height: 250px;
+}
