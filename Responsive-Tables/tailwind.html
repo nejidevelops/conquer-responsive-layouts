@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-200 bg-gray-900">
+  <main class="min-h-screen flex items-center justify-center">
+    <div class="max-w-2xl mx-auto p-4">
+      <h1 class="text-2xl font-bold mb-4 text-center">Responsive Tables</h1>
+
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-gray-800 border-collapse border border-gray-700">
+          <caption class="bg-black text-white text-lg font-bold uppercase p-4">The last 14 world F1 Champions</caption>
+          <thead class="hidden md:table-header-group">
+            <tr class="bg-black bg-opacity-50">
+              <th class="p-4 text-left">Name</th>
+              <th class="p-4 text-left">Poles</th>
+              <th class="p-4 text-left">Podiums</th>
+              <th class="p-4 text-left">Wins</th>
+              <th class="p-4 text-left">Career points</th>
+              <th class="p-4 text-left">Championships</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Repeat for each row -->
+            <tr class="even:bg-gray-700 odd:bg-gray-800 border-b border-gray-700">
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:grid grid-template-columns-2 before:font-semibold before:uppercase md:before:hidden" data-cell="name">Max Verstappen</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:grid grid-template-columns-2 before:font-semibold before:uppercase md:before:hidden" data-cell="poles">22</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:grid grid-template-columns-2 before:font-semibold before:uppercase md:before:hidden" data-cell="podiums">80</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:grid grid-template-columns-2 before:font-semibold before:uppercase md:before:hidden" data-cell="wins">37</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:grid grid-template-columns-2 before:font-semibold before:uppercase md:before:hidden" data-cell="career-points">2080.5</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:grid grid-template-columns-2 before:font-semibold before:uppercase md:before:hidden" data-cell="championships">2</td>
+            </tr>
+
+            <tr class="even:bg-gray-700 odd:bg-gray-800 border-b border-gray-700">
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:block before:font-semibold before:uppercase md:before:hidden" data-cell="name">Max Verstappen</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:block before:font-semibold before:uppercase md:before:hidden" data-cell="poles">22</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:block before:font-semibold before:uppercase md:before:hidden" data-cell="podiums">80</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:block before:font-semibold before:uppercase md:before:hidden" data-cell="wins">37</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:block before:font-semibold before:uppercase md:before:hidden" data-cell="career-points">2080.5</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:block before:font-semibold before:uppercase md:before:hidden" data-cell="championships">2</td>
+            </tr>
+
+            <tr class="even:bg-gray-700 odd:bg-gray-800 border-b border-gray-700">
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:block before:font-semibold before:uppercase md:before:hidden" data-cell="name">Max Verstappen</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:block before:font-semibold before:uppercase md:before:hidden" data-cell="poles">22</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:block before:font-semibold before:uppercase md:before:hidden" data-cell="podiums">80</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:block before:font-semibold before:uppercase md:before:hidden" data-cell="wins">37</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:block before:font-semibold before:uppercase md:before:hidden" data-cell="career-points">2080.5</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:block before:font-semibold before:uppercase md:before:hidden" data-cell="championships">2</td>
+            </tr>
+
+            <tr class="even:bg-gray-700 odd:bg-gray-800 border-b border-gray-700">
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:block before:font-semibold before:uppercase md:before:hidden" data-cell="name">Max Verstappen</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:block before:font-semibold before:uppercase md:before:hidden" data-cell="poles">22</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:block before:font-semibold before:uppercase md:before:hidden" data-cell="podiums">80</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:block before:font-semibold before:uppercase md:before:hidden" data-cell="wins">37</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:block before:font-semibold before:uppercase md:before:hidden" data-cell="career-points">2080.5</td>
+              <td class="p-4 block md:table-cell before:content-[attr(data-cell)] md:before:content-none before:block before:font-semibold before:uppercase md:before:hidden" data-cell="championships">2</td>
+            </tr>
+            <!-- Repeat rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
